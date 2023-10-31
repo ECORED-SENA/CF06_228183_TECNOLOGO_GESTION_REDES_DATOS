@@ -14,7 +14,7 @@
           .col-lg-4.col-10.mb-4(data-aos="fade-right")
             img(src="@/assets/curso/temas/t2/img.png", alt="")
           .col-lg-8.mb-4(data-aos="fade-left")
-            p Para la verificación de dispositivos se debe establecer una distribución específica de las diferentes conexiones, mediante dominios o grupos de trabajo, configuraciones de las direcciones IP, recursos compartidos, gestión de cuentas de usuario y privilegios asociados, generalmente, bajo un sistema de archivo distribuido o directorio activo
+            p Para la verificación de dispositivos se debe establecer una distribución específica de las diferentes conexiones, mediante dominios o grupos de trabajo, configuraciones de las direcciones IP, recursos compartidos, gestión de cuentas de usuario y privilegios asociados, generalmente, bajo un sistema de archivo distribuido o directorio activo.
             .bg-1.p-3.p-lg-4
               p.mb-0 La implementación de diagramas de flujo para representar gráficamente los procedimientos sistemáticos, los métodos corporativos y las distintas técnicas a aplicar, es una manera idónea de documentar estos procesos.
 

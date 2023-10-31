@@ -141,7 +141,7 @@ export default {
         'Ariganello, E. (2020). <em>REDES CISCO Guía de estudio para la certificación CCNA 200–301</em>. Editorial Ra-Ma.',
       tipo: 'Documento',
       link:
-        'https://www-alphaeditorialcloud-com.bdigital.se na.edu.co/auth/ip?intended_url=https://www-alphaeditorialcloud-com.bdigital.sena.edu.co/library/publication/redes-cisco-guia-de-estudio-para-la-certificacion-ccna-200-301',
+        'https://aprenderedes.com/wp-content/uploads/2020/04/CCNA-200-301-indice.pdf',
     },
     {
       tema: '1. Direccionamiento IP',
@@ -321,7 +321,7 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Carmen Alicia Martínez Torres',
+          nombre: 'Carlos Eduardo Garavito Parada',
           cargo: 'Animador y Productor Multimedia',
           centro:
             'Centro Industrial del Diseño y la Manufactura - Regional Santander',
@@ -333,7 +333,7 @@ export default {
             'Centro Industrial del Diseño y la Manufactura - Regional Santander',
         },
         {
-          nombre: 'Camilo Andrés Bolaño Rey',
+          nombre: 'Daniela Muñoz Bedoya',
           cargo: 'Locución',
           centro:
             'Centro Industrial del Diseño y la Manufactura - Regional Santander',
@@ -351,7 +351,7 @@ export default {
             'Centro Industrial del Diseño y la Manufactura - Regional Santander',
         },
         {
-          nombre: '',
+          nombre: 'Emilsen Alfonso Bautista',
           cargo: 'Actividad didáctica',
           centro:
             'Centro Industrial del Diseño y la Manufactura - Regional Santander',

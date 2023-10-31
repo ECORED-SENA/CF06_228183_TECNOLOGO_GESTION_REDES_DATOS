@@ -9,7 +9,7 @@
         figure
           img(src="@/assets/curso/temas/sintesis.svg", alt="Esquema general de los contenidos estudiados en el componente formativo. Tema principal: configuración y gestión de dispositivos activos. Temas integradores: Direccionamiento IP, Verificación de dispositivos.")
       .col-auto
-        a.anexo.mb-5(:href="obtenerLink('/downloads/Sintesis.pdf')" target="_blank")
+        a.anexo.mb-5(:href="obtenerLink('/downloads/sintesis.pdf')" target="_blank")
           .anexo__icono
             img(src="@/assets/template/icono-pdf.svg")
           .anexo__texto

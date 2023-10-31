@@ -36,7 +36,7 @@
                 img(src='@/assets/curso/temas/t1/tarj-ico2.svg' alt='')
                 .tarjeta.bg-8
                   .p-4.pt-2
-                    p.mb-0 La dirección IP forma parte del protocolo IP (Internet Protocol), el cual indica el uso, formato, tipos y demás características del direccionamiento IP.
+                    p.mb-0 La dirección IP forma parte del protocolo IP (#[em Internet Protocol]), el cual indica el uso, formato, tipos y demás características del direccionamiento IP.
             .col-md-6.col-lg-3.mb-3.mb-lg-0
               .tarjeta-avatar
                 img(src='@/assets/curso/temas/t1/tarj-ico3.svg' alt='')
@@ -54,8 +54,8 @@
 
           figure(data-aos="fade-down")
             .video
-              iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-            figcaption Video.
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/ze9WnI0gADM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            figcaption Video. Direccionamiento IP
 
     Separador
 
@@ -81,7 +81,7 @@
           img.mb-n100(src='@/assets/curso/temas/t1/tarj2-img1.png' alt='')
       .col-lg-5.col-md-6.mb-5.ps-md-0
         .bg-9.p-4.p-lg-5.brr-8
-          p.mb-4.m-h245 La misma dirección puede estar en otra ciudad y ahí es cuando entra en acción el concepto de la máscara de subred, que vendría siendo la ciudad para este ejemplo; por ende, con esa dirección IP (dirección de la casa) y máscara de subred (ciudad) se puede ubicar con facilidad, en un espacio, alguna empresa de envíos para entregar algún pedido o, en este caso, entregar/recibir datos de información
+          p.mb-4.m-h245 La misma dirección puede estar en otra ciudad y ahí es cuando entra en acción el concepto de la máscara de subred, que vendría siendo la ciudad para este ejemplo; por ende, con esa dirección IP (dirección de la casa) y máscara de subred (ciudad) se puede ubicar con facilidad, en un espacio, alguna empresa de envíos para entregar algún pedido o, en este caso, entregar/recibir datos de información.
           img.mb-n100(src='@/assets/curso/temas/t1/tarj2-img2.png' alt='')
 
 
@@ -268,7 +268,7 @@
               | Máscara de subred.
             li
               i.fas.fa-project-diagram
-              | Dirección MAC (Media Access Control, Control de Acceso a Medios).
+              span.mb-0 Dirección MAC (#[em Media Access Control], Control de Acceso a Medios).
       .col-lg-2.col-md-6.ps-md-0
         .bg-2.h-100.p-4.px-lg-5.d-flex.align-items-center   
           img(src="@/assets/curso/temas/t1/ico3.svg")
@@ -285,7 +285,7 @@
             figure
               img(src='@/assets/curso/temas/t1/fig6.svg', alt='El esquema detalla la red formada por algunos hosts, en conexión directa de datos.')
 
-          p(data-aos="fade") En figura inmediatamente anterior, al #[em host] identificado como C se le configura la dirección IP 198.23.5.14. Este desea comunicarse con el #[em host] identificado como D, al cual se le configura la dirección IP 198.23.5.27. El conjunto de datos de origen a destino se integra en paquetes de datos, y la capa de red asigna las respectivas direcciones IP del #[em host] C (emisor) y del #[em host] D (destino), pasándose a la capa de enlace de datos, que desconoce la MAC (dirección física) del #[em host] D. Para realizar dicha consulta, el #[em host] C envía un mensaje a todas las máquinas interconectadas en red; esta petición es conocida como ARP (Protocolo de Resolución de Direcciones) y es de tipo broadcast, que son enviadas como difusión a todos los equipos en la red, consultando por la MAC correspondiente a la IP 198.23.5.27.
+          p(data-aos="fade") En figura inmediatamente anterior, al #[em host] identificado como C se le configura la dirección IP 198.23.5.14. Este desea comunicarse con el #[em host] identificado como D, al cual se le configura la dirección IP 198.23.5.27. El conjunto de datos de origen a destino se integra en paquetes de datos, y la capa de red asigna las respectivas direcciones IP del #[em host] C (emisor) y del #[em host] D (destino), pasándose a la capa de enlace de datos, que desconoce la MAC (dirección física) del #[em host] D. Para realizar dicha consulta, el #[em host] C envía un mensaje a todas las máquinas interconectadas en red; esta petición es conocida como ARP (Protocolo de Resolución de Direcciones) y es de tipo #[em broadcast], que son enviadas como difusión a todos los equipos en la red, consultando por la MAC correspondiente a la IP 198.23.5.27.
           p(data-aos="fade") Para la petición ARP, solo el #[em host] D responde dicha petición, enviando como respuesta la dirección MAC. Es así que el #[em host] C incluye la dirección MAC de origen y destino a los paquetes ya en la capa física, y esta se encarga de transmitirlos al medio.
 
     .bg-2.p-2.px-4.b-r4.w-fit.mb-4(data-aos="fade") 
@@ -295,7 +295,7 @@
       .bloque-texto-g__img(
         :style="{'background-image': `url(${require('@/assets/curso/temas/t1/img5.png')})`}")
       .bloque-texto-g__texto.p-4
-        p.mb-0 El #[em host] identificado como D, configurado con la dirección IP 190.200.23.5, no se ubica en la misma red que el host identificado como A, configurado con la dirección IP 200.23.5.14. El host A envía un mensaje broadcast consultando por la dirección MAC de D, pero no recibirá una respuesta. Por lo tanto, la comunicación entre ambos #[em hosts] se vuelve imposible. El dispositivo de red que se encarga de establecer dicha comunicación se conoce como #[em router], el cual permite la conexión de dos o más redes, su principal función es enrutar o encaminar paquetes de datos al #[em host] de redes diferentes.
+        p.mb-0 El #[em host] identificado como D, configurado con la dirección IP 190.200.23.5, no se ubica en la misma red que el host identificado como A, configurado con la dirección IP 200.23.5.14. El host A envía un mensaje #[em broadcast] consultando por la dirección MAC de D, pero no recibirá una respuesta. Por lo tanto, la comunicación entre ambos #[em hosts] se vuelve imposible. El dispositivo de red que se encarga de establecer dicha comunicación se conoce como #[em router], el cual permite la conexión de dos o más redes, su principal función es enrutar o encaminar paquetes de datos al #[em host] de redes diferentes.
 
     .row.mb-3
       .col-lg-8.mb-4(data-aos="fade-right")
@@ -307,7 +307,7 @@
         img(src="@/assets/curso/temas/t1/img6.png", alt="")
 
     .titulo-sexto.color-acento-contenido.mb-3(data-aos="fade")
-      p.mb-0 #[b Figura 7.] Interconexión de #[em hosts]
+      p.mb-0 #[b Figura 7.] Interconexión de redes a través de un #[em router]
     figure.mb-5(data-aos="fade-down")
       img(src='@/assets/curso/temas/t1/fig7.svg', alt='Gráfica que muestra la forma en que se da la conexión entre dos redes: Red 1 y Red 2, mediante un Router.')
 
@@ -316,7 +316,7 @@
         img(src="@/assets/curso/temas/t1/img7.png", alt="")
       .col-lg-8.mb-4(data-aos="fade-left")
         .cajon-b.color-acento-botones.mb-4
-          p Teniendo la conexión establecida entre las dos redes, el #[em host] emisor envía una petición ARP a fin de consultar la dirección MAC que pertenece a una IP asignada. Si no se tiene respuesta de los #[em hosts] conectados en su red, este envía los paquetes de datos a través de un #[em router] configurado para este tipo de envíos. Los paquetes se envían mediante el gateway (puerta de enlace) por defecto. Para que el #[em router] determine la dirección IP de la red a la que pertenece el #[em host] buscado, recurre a la máscara de red, en combinación con la dirección IP destino, realizando una operación conocida como AND binario.
+          p Teniendo la conexión establecida entre las dos redes, el #[em host] emisor envía una petición ARP a fin de consultar la dirección MAC que pertenece a una IP asignada. Si no se tiene respuesta de los #[em hosts] conectados en su red, este envía los paquetes de datos a través de un #[em router] configurado para este tipo de envíos. Los paquetes se envían mediante el #[em gateway] (puerta de enlace) por defecto. Para que el #[em router] determine la dirección IP de la red a la que pertenece el #[em host] buscado, recurre a la máscara de red, en combinación con la dirección IP destino, realizando una operación conocida como AND binario.
         h5 Para esto, el #[em router] realiza una operación interna, donde se combinan los bits de la dirección IP binario y la máscara de red binario. Tal combinación está detallada en la siguiente tabla:
 
     .row.justify-content-center.mb-5(data-aos="fade-down")
@@ -334,21 +334,25 @@
               tr
                 td 1 1
                 td.text-center 1
-                td Dirección IP binario #[em host]  11001000 . 00010111 . 00000101 . 00001110
+                td.text-center Dirección IP binario #[em host]  
+                  p.mb-0 11001000 . 00010111 . 00000101 . 00001110
               tr
                 td 1 0
                 td.text-center 0
-                td Máscara de red binario 11111111 . 11111111 . 11111111 . 00000000
+                td.text-center Máscara de red binario 
+                  p.mb-0 11111111 . 11111111 . 11111111 . 00000000
               tr
                 td 0 1
                 td.text-center 0
-                td Dirección de red binario 11001000 . 00010111 . 00000101 . 00000000
+                td.text-center Dirección de red binario 
+                  p.mb-0 11001000 . 00010111 . 00000101 . 00000000
               tr
                 td 0 0
                 td.text-center 0
-                td Dirección de red decimal 200. 23. 5. 0
+                td.text-center Dirección de red decimal 
+                  p.mb-0 200. 23. 5. 0
 
-    p(data-aos="fade") Realizada la operación AND, el #[em router] envía los paquetes de datos a la correspondiente red 2, a la que pertenece el #[em host] destino D. Luego, envía una petición broadcast, a fin de consultar la dirección MAC del #[em host] destino D.
+    p(data-aos="fade") Realizada la operación AND, el #[em router] envía los paquetes de datos a la correspondiente red 2, a la que pertenece el #[em host] destino D. Luego, envía una petición #[em broadcast], a fin de consultar la dirección MAC del #[em host] destino D.
 
     p(data-aos="fade") Al obtener la respuesta, el #[em router] enruta finalmente los paquetes de forma directa. Si se establece una comunicación en sentido contrario, de #[em host] A al #[em host] D, el proceso a realizar por el #[em router] es el mismo. En el primer proceso realizado, el #[em router] almacenó en su tabla de enrutamiento las direcciones MAC-IP del #[em host] A y del D, las cuales pueden ser usadas para posteriores envíos de datos.
 
@@ -549,8 +553,9 @@
 
           figure(data-aos="fade-down")
             .video
-              iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-            figcaption Video.
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/RVH5u_nImlE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            figcaption Video. Dirección IPv4
+
 
 
     Separador
@@ -559,12 +564,12 @@
     .titulo-segundo.color-acento-contenido(data-aos="fade") 
       h2 1.7 IPv6
 
-    p.mb-4(data-aos="fade") Debido al crecimiento exponencial que tuvo la implementación del protocolo de Internet en su versión 4 y partiendo de que el diseño de este fue casi un experimento, sin llegar a imaginar el éxito comercial que iba a tener y que solo se dispone de 232 direcciones, no se planteó que en pocos meses iba a quedar corto en espacio. Por tal motivo, se contempló la implementación de una nueva versión llamada IPv6.
+    p.mb-4(data-aos="fade") Debido al crecimiento exponencial que tuvo la implementación del protocolo de Internet en su versión 4 y partiendo de que el diseño de este fue casi un experimento, sin llegar a imaginar el éxito comercial que iba a tener y que solo se dispone de 2#[sup 32] direcciones, no se planteó que en pocos meses iba a quedar corto en espacio. Por tal motivo, se contempló la implementación de una nueva versión llamada IPv6.
 
     .row.justify-content-center.mb-5(data-aos="fade-down")
       .col-lg-8.col-md-8.pe-md-0
         .bg-7.h-100.p-4.brl-8
-          p Esta dispone de 2128 direcciones o, dicho de otra manera, 340 sextillones de direcciones. Esta versión fue trabajada por la organización de estandarización de los protocolos de Internet (IETF, Internet Engineering Task Force). El despliegue del direccionamiento IPv6 conserva una coexistencia ordenada con su antecesora versión 4; a medida que el ecosistema de las redes de datos se adapte, esta se irá desplazando a la nueva versión del protocolo de Internet.
+          p Esta dispone de 2#[sup 128] direcciones o, dicho de otra manera, 340 sextillones de direcciones. Esta versión fue trabajada por la organización de estandarización de los protocolos de Internet (IETF, #[em Internet Engineering Task Force]). El despliegue del direccionamiento IPv6 conserva una coexistencia ordenada con su antecesora versión 4; a medida que el ecosistema de las redes de datos se adapte, esta se irá desplazando a la nueva versión del protocolo de Internet.
           p Por esta razón, es importante comprender cómo se implementa la versión 6 del Protocolo de Internet, ya que su aplicación se extiende incluyendo a usuarios domésticos, empresas, proveedores de contenido, proveedores de servicios de Internet y los entes de regulación de Internet.
       .col-lg-4.col-md-4.ps-md-0
         .bg-2.h-100.p-4.d-flex.align-items-center.brr-8   

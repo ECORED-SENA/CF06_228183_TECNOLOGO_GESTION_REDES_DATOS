@@ -120,7 +120,7 @@ export default {
       {
         icono: 'fas fa-file-pdf',
         titulo: 'Descargar PDF',
-        download: 'downloads/prueba.pdf',
+        download: 'downloads/228183-CF06-DU.pdf',
       },
       {
         icono: 'fas fa-download',
@@ -293,21 +293,6 @@ export default {
           cargo: 'Experto Temático',
           centro:
             'Centro de la Industria, la Empresa y los Servicios - Regional Norte de Santander',
-        },
-        {
-          nombre: 'Gloria Lida Alzate Suarez',
-          cargo: 'Diseñadora Instruccional',
-          centro: 'Centro de Gestión Industrial- Regional Distrito Capital',
-        },
-        {
-          nombre: 'Silvia Milena Sequeda Cárdenas',
-          cargo: 'Evaluadora Instruccional',
-          centro: 'Centro de Gestión Industrial - Regional Distrito Capital',
-        },
-        {
-          nombre: 'Darío González',
-          cargo: 'Corrección de estilo',
-          centro: 'Centro Agropecuario La Granja - Regional Tolima',
         },
         {
           nombre: 'Fabian Leonardo Correa Díaz',

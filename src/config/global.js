@@ -209,7 +209,7 @@ export default {
     {
       termino: '<em>Router</em>',
       significado:
-        'es un dispositivo de <em>hardware</em> que permite la interconexión de hosts en redes de datos.',
+        'es un dispositivo de <em>hardware</em> que permite la interconexión de <em>hosts</em> en redes de datos.',
     },
     {
       termino: 'Servidor',
@@ -224,7 +224,7 @@ export default {
     {
       termino: '<em>Switch</em>',
       significado:
-        'es un dispositivo de hardware que se utiliza para interconectar varios hosts a través de la red de datos.',
+        'es un dispositivo de <em>hardware</em> que se utiliza para interconectar varios <em>hosts</em> a través de la red de datos.',
     },
     {
       termino: 'WAN',

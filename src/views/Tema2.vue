@@ -97,7 +97,7 @@
       .col-lg-8.mb-4(data-aos="fade-left")
         .bg-4.p-3.p-lg-4.mb-4.b-r12
           p.mb-0 De hecho, los #[em routers] de Internet y los algoritmos de enrutamiento operan exactamente de esta manera. Además, los proveedores de #[em switches] y #[em routers] agrupan su plano de datos de #[em hardware] y el plano de control de #[em software] en plataformas cerradas (pero interoperables), en un producto integrado verticalmente.
-        p Son varios los investigadores (como Caesar 2005, Casado 2009, McKeown 2008) quienes, recientemente, han comenzado a explorar nuevos controles de arquitecturas de plano en las que parte del plano de control se implementa en los routers. La medición / informe local del estado del enlace, instalación y mantenimiento de la tabla de reenvío) junto con el plano de datos, y parte del plano de control se puede implementar de forma externa al enrutador (por ej; en un servidor centralizado, que podría realizar el cálculo de ruta).
+        p Son varios los investigadores (como Caesar 2005, Casado 2009, McKeown 2008) quienes, recientemente, han comenzado a explorar nuevos controles de arquitecturas de plano en las que parte del plano de control se implementa en los #[em routers]. La medición (informe local del estado del enlace, instalación y mantenimiento de la tabla de reenvío) junto con el plano de datos, y parte del plano de control, se puede implementar de forma externa al enrutador (por ej; en un servidor centralizado, que podría realizar el cálculo de ruta).
 
     h5.mb-4(data-aos="fade") Para el tipo de plano de control, es importante considerar dos enfoques:
     
@@ -110,7 +110,7 @@
 
     .row.mb-3
       .col-lg-8.mb-4(data-aos="fade-right")
-        p El reenvió de paquetes es una de las funciones de la capa de red que mueve los paquetes desde la entrada del router hasta la salida correspondiente. Funciona localmente y es una característica de todos los routers.
+        p El reenvió de paquetes es una de las funciones de la capa de red que mueve los paquetes desde la entrada del #[em router] hasta la salida correspondiente. Funciona localmente y es una característica de todos los #[em routers].
         .bg-4.p-3.p-lg-4.mb-4.b-r12
           p.mb-0 En una red de datos, existe un flujo constante de información que se envía de un extremo a otro. Los datagramas IP son las unidades principales que contienen la información de Internet. Un datagrama se estructura con toda la información necesaria sobre direcciones, enrutamiento, prioridad, entre otros.
       .col-lg-4.col-10.mb-4(data-aos="fade-left")
@@ -186,7 +186,7 @@
             .col
               .row.justify-content-between.align-items-center
                 .col.mb-3.mb-sm-0
-                  h3.mb-1 ¿Que es? ¿como Funciona? Protocolo de Routing de Redes OSPF
+                  h3.mb-1 ¿Que es? ¿Como Funciona? Protocolo de Routing de Redes OSPF
                   p.mb-0 Explore el contenido del video que se muestra en el siguiente enlace y asimile con propiedad los conceptos y acciones del protocolo OSPF:
                 .col-sm-auto
                   a.boton.color-acento-botones.texto-blanco(:href="('https://www.youtube.com/watch?v=wK24zn66Dbs')" target="_blank")
@@ -196,7 +196,7 @@
     .bg-2.p-2.px-4.b-r4.w-fit.mb-4(data-aos="fade") 
       h3.text-white.mb-0 Servicios para IPv6
 
-    p(data-aos="fade") Los servicios de red con soporte IPv6 son de alta importancia para este mundo de transición, debido al cambio que se avecina en todo el mundo y, especialmente, en nuestro en Colombia, donde el liderazgo lo araca el ministerio de las Tic.
+    p(data-aos="fade") Los servicios de red con soporte IPv6 son de alta importancia para este mundo de transición, debido al cambio que se avecina en todo el mundo y, especialmente, en Colombia, donde el liderazgo lo lleva el ministerio de las TIC.
     h5.mb-4(data-aos="fade") Algunos de los servicios que se van a tratar son:
 
     .row.justify-content-center.mb-5(data-aos="fade-down")
@@ -232,9 +232,9 @@
           img(src="@/assets/curso/temas/t2/img8.png")
 
     .bg-2.p-2.px-4.b-r4.w-fit.mb-4(data-aos="fade") 
-      h3.text-white.mb-0 Cisco Packet Tracer
+      h3.text-white.mb-0 #[em Cisco Packet Tracer]
 
-    p.mb-4(data-aos="fade") La herramienta #[em #[b Packet Tracer de Cisco]], corresponde a un #[em software] de simulación de redes, que permite hacer pruebas con diferentes dispositivos de red, pudiendo llevar un caso real al mundo de la simulación, donde se obtienen resultados favorables en cada una de las fases de una topología de red, comenzando por la planeación hasta la verificación de sus transmisiones.
+    p.mb-4(data-aos="fade") La herramienta #[b #[em Packet Tracer] de Cisco], corresponde a un #[em software] de simulación de redes, que permite hacer pruebas con diferentes dispositivos de red, pudiendo llevar un caso real al mundo de la simulación, donde se obtienen resultados favorables en cada una de las fases de una topología de red, comenzando por la planeación hasta la verificación de sus transmisiones.
 
     .row 
       .col-lg-3.col-md-5.mb-3.mb-md-0(data-aos="fade-right") 

@@ -91,12 +91,12 @@
     .titulo-segundo.color-acento-contenido(data-aos="fade") 
       h2 1.2 Estructura de la dirección IP y clases de direccionamiento IP
 
-    p.mb-4(data-aos="fade") La dirección IP corresponde a una dirección lógica de 32 bits, se trata del identificador de la conexión del dispositivo a la red, dicha dirección es única para cada dispositivo conectado a la red, ya que esta se asocia a la dirección de la tarjeta de red.
+    p.mb-4(data-aos="fade") La dirección IP corresponde a una dirección lógica de 32 #[em bits], se trata del identificador de la conexión del dispositivo a la red, dicha dirección es única para cada dispositivo conectado a la red, ya que esta se asocia a la dirección de la tarjeta de red.
 
     .row.justify-content-center.mb-4
       .col-lg-8.mb-4(data-aos="fade-down")
         .titulo-sexto.color-acento-contenido.mb-3
-          p.mb-0 #[b Figura 2.] Dirección IPv4
+          p.mb-0 #[b Figura 2.] Identificador de conexión del dispositivo a la red
         figure
           img(src='@/assets/curso/temas/t1/fig2.svg', alt='Figura que muestra cómo la dirección IP está asociada a una dirección lógica de 32 bits.')
 
@@ -233,7 +233,7 @@
               p.mb-0 En la capa de enlace de datos, se agregan las direcciones correspondientes a la MAC de los dos #[em hosts] y un respectivo número determinado para verificar si hay errores en el envío de la información durante las transmisiones posteriores, pasando a recibir la denominación de tramas.
           .row.justify-content-center(titulo="Conversión a pulsos eléctricos u ondas")
             .col-md-10.mb-0
-              p.mb-0 En la capa física, las tramas se empaquetan mediante un flujo de bits adecuado para su conversión a pulsos eléctricos u ondas que se envían a los medios. Cuando los pulsos u ondas llegan al #[em host] receptor, el proceso se invierte, obteniendo en la capa de aplicación receptora los datos en su formato original.
+              p.mb-0 En la capa física, las tramas se empaquetan mediante un flujo de #[em bits] adecuado para su conversión a pulsos eléctricos u ondas que se envían a los medios. Cuando los pulsos u ondas llegan al #[em host] receptor, el proceso se invierte, obteniendo en la capa de aplicación receptora los datos en su formato original.
       .col-lg-5.col-10.mb-4(data-aos="fade-left")
         img(src="@/assets/curso/temas/t1/img4.png", alt="")
 
@@ -242,7 +242,7 @@
         .bg-4.p-4.b-r12
           p.mb-0 Aunque son pulsos eléctricos lo que se transmite a través del medio físico, se hace referencia a los paquetes transmitidos porque son unidades de información con entidad propia.
 
-    h5.mb-4(data-aos="fade") El siguente, es el modelo de capas OSI:
+    h5.mb-4(data-aos="fade") El siguiente, es el modelo de capas OSI:
 
     .row.justify-content-center.mb-4
       .col-lg-8.mb-4(data-aos="fade-down")
@@ -254,7 +254,7 @@
     .bg-2.p-2.px-4.b-r4.w-fit.mb-4(data-aos="fade") 
       h3.text-white.mb-0 Comunicación entre #[em hosts] en red
     
-    p.mb-4(data-aos="fade") Para establecer la comunicación en red TCP/IP, los dispositivos requieren tres datos sobre el host destino, al que se dirige el paquete de datos; estos son:
+    p.mb-4(data-aos="fade") Para establecer la comunicación en red TCP/IP, los dispositivos requieren tres datos sobre el #[em host] destino, al que se dirige el paquete de datos; estos son:
 
     .row.justify-content-center.mb-5(data-aos="fade-down")
       .col-lg-6.col-md-6.pe-md-0
@@ -273,7 +273,7 @@
         .bg-2.h-100.p-4.px-lg-5.d-flex.align-items-center   
           img(src="@/assets/curso/temas/t1/ico3.svg")
 
-    h5.mb-4(data-aos="fade") En el siguiente esquema, muestra una red formada por varios hosts en una conexión directa de datos.
+    h5.mb-4(data-aos="fade") En el siguiente esquema, se muestra una red formada por varios #[em hosts] en una conexión directa de datos.
 
     .row.fondo5-tema1.align-items-center.pb-5.mb-5
       .col-lg-12.col-12.px-lg-5.px-4
@@ -285,7 +285,7 @@
             figure
               img(src='@/assets/curso/temas/t1/fig6.svg', alt='El esquema detalla la red formada por algunos hosts, en conexión directa de datos.')
 
-          p(data-aos="fade") En figura inmediatamente anterior, al #[em host] identificado como C se le configura la dirección IP 198.23.5.14. Este desea comunicarse con el #[em host] identificado como D, al cual se le configura la dirección IP 198.23.5.27. El conjunto de datos de origen a destino se integra en paquetes de datos, y la capa de red asigna las respectivas direcciones IP del #[em host] C (emisor) y del #[em host] D (destino), pasándose a la capa de enlace de datos, que desconoce la MAC (dirección física) del #[em host] D. Para realizar dicha consulta, el #[em host] C envía un mensaje a todas las máquinas interconectadas en red; esta petición es conocida como ARP (Protocolo de Resolución de Direcciones) y es de tipo #[em broadcast], que son enviadas como difusión a todos los equipos en la red, consultando por la MAC correspondiente a la IP 198.23.5.27.
+          p(data-aos="fade") En la figura inmediatamente anterior, al #[em host] identificado como C se le configura la dirección IP 198.23.5.14. Este desea comunicarse con el #[em host] identificado como D, al cual se le configura la dirección IP 198.23.5.27. El conjunto de datos de origen a destino se integra en paquetes de datos, y la capa de red asigna las respectivas direcciones IP del #[em host] C (emisor) y del #[em host] D (destino), pasándose a la capa de enlace de datos, que desconoce la MAC (dirección física) del #[em host] D. Para realizar dicha consulta, el #[em host] C envía un mensaje a todas las máquinas interconectadas en red; esta petición es conocida como ARP (Protocolo de Resolución de Direcciones) y es de tipo #[em broadcast], que son enviadas como difusión a todos los equipos en la red, consultando por la MAC correspondiente a la IP 198.23.5.27.
           p(data-aos="fade") Para la petición ARP, solo el #[em host] D responde dicha petición, enviando como respuesta la dirección MAC. Es así que el #[em host] C incluye la dirección MAC de origen y destino a los paquetes ya en la capa física, y esta se encarga de transmitirlos al medio.
 
     .bg-2.p-2.px-4.b-r4.w-fit.mb-4(data-aos="fade") 
@@ -295,7 +295,7 @@
       .bloque-texto-g__img(
         :style="{'background-image': `url(${require('@/assets/curso/temas/t1/img5.png')})`}")
       .bloque-texto-g__texto.p-4
-        p.mb-0 El #[em host] identificado como D, configurado con la dirección IP 190.200.23.5, no se ubica en la misma red que el host identificado como A, configurado con la dirección IP 200.23.5.14. El host A envía un mensaje #[em broadcast] consultando por la dirección MAC de D, pero no recibirá una respuesta. Por lo tanto, la comunicación entre ambos #[em hosts] se vuelve imposible. El dispositivo de red que se encarga de establecer dicha comunicación se conoce como #[em router], el cual permite la conexión de dos o más redes, su principal función es enrutar o encaminar paquetes de datos al #[em host] de redes diferentes.
+        p.mb-0 El #[em host] identificado como D, configurado con la dirección IP 190.200.23.5, no se ubica en la misma red que el #[em host] identificado como A, configurado con la dirección IP 200.23.5.14. El #[em host] A envía un mensaje #[em broadcast] consultando por la dirección MAC de D, pero no recibirá una respuesta. Por lo tanto, la comunicación entre ambos #[em hosts] se vuelve imposible. El dispositivo de red que se encarga de establecer dicha comunicación se conoce como #[em router], el cual permite la conexión de dos o más redes, su principal función es enrutar o encaminar paquetes de datos al #[em host] de redes diferentes.
 
     .row.mb-3
       .col-lg-8.mb-4(data-aos="fade-right")
@@ -317,7 +317,7 @@
       .col-lg-8.mb-4(data-aos="fade-left")
         .cajon-b.color-acento-botones.mb-4
           p Teniendo la conexión establecida entre las dos redes, el #[em host] emisor envía una petición ARP a fin de consultar la dirección MAC que pertenece a una IP asignada. Si no se tiene respuesta de los #[em hosts] conectados en su red, este envía los paquetes de datos a través de un #[em router] configurado para este tipo de envíos. Los paquetes se envían mediante el #[em gateway] (puerta de enlace) por defecto. Para que el #[em router] determine la dirección IP de la red a la que pertenece el #[em host] buscado, recurre a la máscara de red, en combinación con la dirección IP destino, realizando una operación conocida como AND binario.
-        h5 Para esto, el #[em router] realiza una operación interna, donde se combinan los bits de la dirección IP binario y la máscara de red binario. Tal combinación está detallada en la siguiente tabla:
+        h5 Para esto, el #[em router] realiza una operación interna, donde se combinan los #[em bits] de la dirección IP binario y la máscara de red binario. Tal combinación está detallada en la siguiente tabla:
 
     .row.justify-content-center.mb-5(data-aos="fade-down")
       .col-lg-9
@@ -417,7 +417,7 @@
     .titulo-segundo.color-acento-contenido(data-aos="fade") 
       h2 1.6  Matemática de red
 
-    p(data-aos="fade") Las matemáticas permiten un entendimiento de las propiedades de la red, para acercarse al conocimiento y aplicación en ecosistemas de redes de datos. Para iniciar, se abordan los conceptos iniciales, que son un bit y un #[em byte] de información.
+    p(data-aos="fade") Las matemáticas permiten un entendimiento de las propiedades de la red, para acercarse al conocimiento y aplicación en ecosistemas de redes de datos. Para iniciar, se abordan los conceptos iniciales, que son un #[em bit] y un #[em byte] de información.
     h5.mb-4(data-aos="fade") Algunos elementos que deben estar claramente comprendidos, en la matemática de red, son:
 
     .bg-13.mb-4.py-4.py-lg-5
@@ -429,18 +429,18 @@
                 img(src='@/assets/curso/temas/t1/figura.svg', alt='Figura que expone los elementos conceptuales más importantes de la matemática de datos: bit y sus valores cero y uno.')
 
             .tarjeta.tarjeta-modal.p-3(x="4%" y="14%" numero="")
-              p.mb-0 Un bit está compuesto por los valores 0 y 1. 0 para falso y 1 para verdadero.
+              p.mb-0 Un #[em bit] está compuesto por los valores 0 y 1. 0 para falso y 1 para verdadero.
             .tarjeta.tarjeta-modal.p-3(x="32%" y="51%" numero="")
-              p.mb-0 El 0, indica que no hay comunicación. Cuando un bit se encuentra en cero, su N/A estado es falso, apagado.
+              p.mb-0 El 0, indica que no hay comunicación. Cuando un #[em bit] se encuentra en cero, su N/A estado es falso, apagado.
             .tarjeta.tarjeta-modal.p-3(x="32%" y="91%" numero="")
-              p.mb-0 El 1, indica que sí hay comunicación. Cuando un bit se encuentra en uno, su estado es verdadero, encendido.
+              p.mb-0 El 1, indica que sí hay comunicación. Cuando un #[em bit] se encuentra en uno, su estado es verdadero, encendido.
 
-    p.mb-5(data-aos="fade") Los computadores trabajan con grupos de 8 bits, los cuales se llaman #[em bytes]. El intervalo de valores de un #[em byte] está en el rango de 0 a 255. De esta manera, cuando se menciona que una dirección IPv4 está compuesta de 4 octetos, quiere decir que se compone de 4 #[em bytes].
+    p.mb-5(data-aos="fade") Los computadores trabajan con grupos de 8 #[em bits], los cuales se llaman #[em bytes]. El intervalo de valores de un #[em byte] está en el rango de 0 a 255. De esta manera, cuando se menciona que una dirección IPv4 está compuesta de 4 octetos, quiere decir que se compone de 4 #[em bytes].
 
     .bg-2.p-2.px-4.b-r4.w-fit.mb-4(data-aos="fade") 
       h3.text-white.mb-0 Binario a decimal
 
-    p(data-aos="fade") El sistema binario tiene como base el 2. Por esta razón, es ideal representar cada posición en potencias de 2. Las direcciones IPv4 se estructuran por cuatro bytes, punteados tanto en binario o decimal.
+    p(data-aos="fade") El sistema binario tiene como base el 2. Por esta razón, es ideal representar cada posición en potencias de 2. Las direcciones IPv4 se estructuran por cuatro #[em bytes], punteados tanto en binario o decimal.
     h5.mb-4(data-aos="fade") Por ejemplo:
 
     .row.justify-content-center.mb-4
@@ -450,7 +450,7 @@
         figure
           img(src='@/assets/curso/temas/t1/fig9.svg', alt='Figura que muestra la notación de dirección IPv4.')
 
-    p.mb-4(data-aos="fade") En el sistema de numeración base 2, las posiciones en los números binarios de 8 bits se presentan así:
+    p.mb-4(data-aos="fade") En el sistema de numeración base 2, las posiciones en los números binarios de 8 #[em bits] se presentan así:
 
     .row.justify-content-center.mb-5(data-aos="fade-down")
       .col-lg-7
@@ -488,7 +488,7 @@
                 td 2#[sup 0]
                 td 1
 
-    p.mb-4(data-aos="fade") El sistema de numeración de base 2 puede ser expresado usando solo dos dígitos: 0 y 1. Al realizar la conversión de binario a decimal, se ubican los 8 bits en cada posición, iniciando por el MSB (bit más significativo), que equivale a 128, luego se procede a sumar las equivalencias que se encuentren en 1, para obtener el valor del octeto de binario a decimal.
+    p.mb-4(data-aos="fade") El sistema de numeración de base 2 puede ser expresado usando solo dos dígitos: 0 y 1. Al realizar la conversión de binario a decimal, se ubican los 8 #[em bits] en cada posición, iniciando por el MSB (#[em bit] más significativo), que equivale a 128, luego se procede a sumar las equivalencias que se encuentren en 1, para obtener el valor del octeto de binario a decimal.
 
     .titulo-sexto.color-acento-contenido.mb-3(data-aos="fade") 
       p.mb-0 #[b Tabla 5.] Equivalencia binaria a decimal
@@ -548,7 +548,7 @@
           .col-lg-1.col-md-2.col-4.mb-3.mb-md-0(data-aos="fade-right")
             img(src="@/assets/curso/temas/t1/ico4.svg")
           .col-lg-11.col-md-10.mb-4(data-aos="fade-left")
-            p El sistema binario tiene su correspondiente conversión al sistema decimal. Dado que las direcciones IPv4 se representan mediante el formato decimal punteado, solo es necesario analizar el proceso de conversión de valores binarios de 8 bits a valores decimales de 0 a 255, para cada agrupación de 8 bits (octeto) en una dirección IPv4.
+            p El sistema binario tiene su correspondiente conversión al sistema decimal. Dado que las direcciones IPv4 se representan mediante el formato decimal punteado, solo es necesario analizar el proceso de conversión de valores binarios de 8 #[em bits] a valores decimales de 0 a 255, para cada agrupación de 8 #[em bits] (octeto) en una dirección IPv4.
             p En el siguiente video, se detallan los pasos respectivos para la conversión de direcciones IP decimales a direcciones IP binarias. Tenga en cuenta que, tal proceso se debe realizar para cada valor decimal a convertir, esto quiere decir que el proceso se debe realizar 4 veces, a fin de convertir la dirección IPv4.
 
           figure(data-aos="fade-down")

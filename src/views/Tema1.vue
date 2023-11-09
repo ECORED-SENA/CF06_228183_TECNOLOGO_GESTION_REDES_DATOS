@@ -242,7 +242,7 @@
         .bg-4.p-4.b-r12
           p.mb-0 Aunque son pulsos eléctricos lo que se transmite a través del medio físico, se hace referencia a los paquetes transmitidos porque son unidades de información con entidad propia.
 
-    h5.mb-4(data-aos="fade") El siguiente, es el modelo de capas OSI:
+    h5.mb-4(data-aos="fade") El siguiente es el modelo de capas OSI:
 
     .row.justify-content-center.mb-4
       .col-lg-8.mb-4(data-aos="fade-down")
